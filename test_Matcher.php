@@ -1,8 +1,8 @@
 <?php
 include 'Matcher.php';
-use \Matcher\Matcher as Matcher;
+use \Matcher\ArrayMatcher as ArrayMatcher;
 
-class test_Matcher extends PHPUnit_Framework_TestCase {
+class test_ArrayMatcher extends PHPUnit_Framework_TestCase {
 
 	function setUp () {
 		$this->little_girl = [
@@ -12,7 +12,7 @@ class test_Matcher extends PHPUnit_Framework_TestCase {
 	}
 
 	function test_hasProperty() {
-		$m = new Matcher( $this->little_girl );
+		$m = new ArrayMatcher( $this->little_girl );
 		$this->assertTrue( $m->hasProperty("name"), 'verifies a property exists.' );
 	}
 
