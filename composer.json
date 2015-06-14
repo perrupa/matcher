@@ -1,0 +1,14 @@
+{
+    "name": "chris.marlow/matcher",
+    "description": "A class for testing if objects match a given set of criteria",
+    "authors": [
+        {
+            "name": "Chris Marlow",
+            "email": "chris.marlow@achievers.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpunit/phpunit": "^4.7"
+    }
+}
